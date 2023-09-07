@@ -17,6 +17,7 @@ La base de datos que se utilizo fue **MySql Maria Db**, la cual el nombre de la 
  * Primero verificar que tengas instalado java 17 o que sea el lenguaje predeterminado
  * Ejecutar el siguiente comando mvn install
  * Ejecutar el comando mvn start para ejecutar el proyecto
+ * Tener un archivo .env para las configuraciones de claves tanto mysql y proyecto
 #
 # DockerFile
 Se realiza una configuracion para ejecutarlo con Docker, la cual se ejecutara en el puerto 8081, los comandos a ejecutar son los siguientes:
