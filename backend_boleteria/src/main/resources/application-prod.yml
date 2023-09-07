@@ -12,25 +12,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MariaDBDialect
+  config:
+    import: classpath:routes.yml
 
 urlApi: http://localhost:${server.port}
-api:
-  index: /api
-  bus:
-    index: /bus
-    create: /create
-    getall: /list
-    delete: /delete/{id}
-    edit: /edit
-    csvData: /csv
-  horario:
-    index: /horario
-    create: /create
-    getall: /list
-    getAllBusHorario: /list/filter/buses
-    getIdHorario: /one/{id}
-  asientos:
-    index: /asientos
-    create: /comprar
-    getAll: /list
-    getAsientos: /list/disponibles
